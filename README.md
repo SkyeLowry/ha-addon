@@ -10,7 +10,7 @@ Logspout with Splunk
 
 This repository contains the following add-ons
 
-### [Example add-on](./example)
+### [Logspout to Splunk](./logspoutsplunk)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
