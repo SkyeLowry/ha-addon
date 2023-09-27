@@ -1,6 +1,6 @@
 ---
 name: Cribl Edge
-version: 1.0.0
+version: latest
 slug: cribl-edge
 description: Cribl Edge add-on for logging to Cribl Stream
 init: false
