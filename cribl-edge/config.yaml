@@ -2,9 +2,7 @@
 name: Cribl Edge
 version: dev
 slug: cribl-edge
-description: Example add-on by Community Home Assistant Add-ons
-url: https://github.com/hassio-addons/addon-example
-codenotary: codenotary@frenck.dev
+description: Cribl Edge add-on for logging to Cribl Stream
 init: false
 arch:
   - aarch64
@@ -12,9 +10,14 @@ arch:
   - armhf
   - armv7
   - i386
+map:
+  - config:r
+image: cribl/cribl:latest
 options:
   log_level: info
   seconds_between_quotes: 5
+  token: null
+  edge_leader: null
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
   seconds_between_quotes: int(1,120)
