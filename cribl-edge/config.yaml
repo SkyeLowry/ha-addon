@@ -11,6 +11,8 @@ arch:
   - armv7
   - i386
 image: cribl/cribl
+ports:
+  9420/tcp: 9420
 options:
   log_level: info
   seconds_between_quotes: 5
