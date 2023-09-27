@@ -2,7 +2,7 @@ ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 # Copy root filesystem
-COPY rootfs /
+#COPY rootfs /
 
 # Setup base
 RUN apk add --no-cache \
