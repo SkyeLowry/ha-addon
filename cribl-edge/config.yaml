@@ -19,3 +19,5 @@ options:
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
   seconds_between_quotes: int(1,120)
+  token: str
+  edge_leader: str
