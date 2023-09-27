@@ -1,20 +1,20 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Cribl Edge
-version: "1.0.0"
-slug: cribl-edge
-description: Cribl Edge Addon
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+---
+name: Example
+version: dev
+slug: example
+description: Example add-on by Community Home Assistant Add-ons
+url: https://github.com/hassio-addons/addon-example
+codenotary: codenotary@frenck.dev
+init: false
 arch:
-  - armhf
-  - armv7
   - aarch64
   - amd64
+  - armhf
+  - armv7
   - i386
-init: false
-map:
-  - share:rw
 options:
-  message: "Hello world..."
+  log_level: info
+  seconds_between_quotes: 5
 schema:
-  message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  seconds_between_quotes: int(1,120)
