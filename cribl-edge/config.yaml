@@ -1,7 +1,7 @@
 ---
-name: Example
+name: Cribl Edge
 version: dev
-slug: example
+slug: cribl-edge
 description: Example add-on by Community Home Assistant Add-ons
 url: https://github.com/hassio-addons/addon-example
 codenotary: codenotary@frenck.dev
