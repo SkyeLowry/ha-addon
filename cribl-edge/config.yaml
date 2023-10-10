@@ -9,10 +9,7 @@ arch:
   - amd64
   - i386
 image: cribl/cribl
-environment: 
-  - CRIBL_DIST_MODE: "managed-edge"
-  - CRIBL_DIST_MASTER_URL: "tcp://criblmaster@192.168.60.115:4200"
-  - CRIBL_EDGE: "1"
+docker_api: true
 ports:
   9420/tcp: 9420
   9000/tcp: 9000
