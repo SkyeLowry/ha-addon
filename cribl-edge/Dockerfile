@@ -6,7 +6,7 @@ RUN apk add --no-cache \
     coreutils=9.3-r1 \
     wget=1.21.4-r0
 
-/opt/cribl/bin/cribl mode-edge -H 0.0.0.0
+CMD [ "/opt/cribl/bin/cribl mode-edge -H 0.0.0.0" ]
 
 # Build arguments
 ARG BUILD_ARCH
