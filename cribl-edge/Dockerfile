@@ -9,7 +9,7 @@ COPY rootfs/ /
 RUN curl https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz --output /opt/cribl.tgz
    
 RUN \
-   cd /opt/cribl; tar zxv cribl.tgz 
+   cd /opt; tar zxv cribl.tgz 
 
 RUN \
    cd /opt/cribl/bin \
