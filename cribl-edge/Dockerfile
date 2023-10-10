@@ -3,7 +3,7 @@ FROM ${BUILD_FROM}
 
 # Copy root filesystem
 COPY rootfs/ /
-/opt/cribl/bin/cribl mode-edge
+/opt/cribl/bin/cribl mode-edge -H 0.0.0.0
 
 # Setup base
 #RUN apk add --no-cache \
