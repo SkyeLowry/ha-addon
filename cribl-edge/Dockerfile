@@ -2,7 +2,8 @@ ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 # Copy root filesystem
-COPY rootfs /
+COPY rootfs/ /
+/opt/cribl/bin/cribl mode-edge
 
 # Setup base
 #RUN apk add --no-cache \
