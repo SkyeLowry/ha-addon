@@ -9,6 +9,7 @@ arch:
   - amd64
   - i386
 image: cribl/cribl
+advanced: true
 docker_api: true
 privileged: 
   - SYS_ADMIN
