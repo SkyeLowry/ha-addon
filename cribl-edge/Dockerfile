@@ -8,9 +8,7 @@ COPY rootfs/ /
 
 RUN cd /opt; curl -Lso - https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz | tar zxv
 
-RUN \
-   cd /opt/cribl/bin \
-   && ./cribl start
+RUN /opt/cribl/bin/cribl start
 
 
 # Build arguments
