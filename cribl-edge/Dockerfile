@@ -3,9 +3,9 @@ FROM ${BUILD_FROM}
 
 RUN \
    cd /opt \
-   curl -Lso - $(curl https://cdn.cribl.io/dl/latest-x64) | tar zxv \
-   /opt/cribl/bin/cribl mode-managed-edge -H 192.168.60.115 -p 4200 \
-   /opt/cribl/bin/cribl enable-boot
+   && curl -Lso - $(curl https://cdn.cribl.io/dl/latest-x64) | tar zxv \
+   && /opt/cribl/bin/cribl mode-managed-edge -H 192.168.60.115 -p 4200 \
+   && /opt/cribl/bin/cribl enable-boot
 
 # Build arguments
 ARG BUILD_ARCH
