@@ -7,7 +7,7 @@ RUN cd /opt; curl -Lso - https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linu
 
 COPY rootfs/ /
 
-RUN ls /opt/cribl
+RUN ls /opt/cribl/local
 
 
 # Build arguments
