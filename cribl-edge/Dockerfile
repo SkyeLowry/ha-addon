@@ -1,5 +1,6 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
+ENV CRIBL_DIST_MASTER_URL="tcp://criblmaster@cribl:4200"
 
 RUN \
    cd /opt \
