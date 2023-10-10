@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ps -ef
+
 cd /opt
 #curl -Lso - https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz | tar zxv
 ls -l cribl/bin
