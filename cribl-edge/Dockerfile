@@ -5,7 +5,7 @@ ENV CRIBL_DIST_MASTER_URL="tcp://criblmaster@cribl:4200"
 
 COPY rootfs/ /
 
-RUN ls /opt/start.sh
+RUN cat /opt/start.sh
 RUN ls /opt/cribl/local
 RUN ls /opt/cribl/bin
 
