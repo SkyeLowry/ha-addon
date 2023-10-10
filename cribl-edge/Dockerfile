@@ -6,7 +6,7 @@ ENV CRIBL_DIST_MASTER_URL="tcp://criblmaster@cribl:4200"
 # Copy local files
 COPY rootfs/ /
 
-RUN cd /opt; curl -L -o https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz | tar zxv
+RUN cd /opt; curl -L -o https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz
 
 RUN \
    cd /opt/cribl/bin \
