@@ -1,11 +1,15 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
+
 ENV CRIBL_DIST_MASTER_URL="tcp://criblmaster@cribl:4200"
+
+# Copy local files
+COPY rootfs/ /
 
 RUN \
    cd /opt \
-   && curl -Lso - https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz | tar zxv \
-   && /opt/cribl/bin/cribl mode-managed-edge -H 192.168.60.115 -p 4200
+   && curl -Lso - https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz | tar zxv 
+
 
 # Build arguments
 ARG BUILD_ARCH
