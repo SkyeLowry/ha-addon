@@ -10,6 +10,7 @@ arch:
   - i386
 image: cribl/cribl
 docker_api: true
+privileged: "SYS_ADMIN"
 ports:
   9420/tcp: 9420
   9000/tcp: 9000
