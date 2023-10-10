@@ -1,4 +1,7 @@
-#!/usr/bin/sh
+#!/bin/bash
+
+echo "Your API key is: $HASSIO_TOKEN"
+
 cd /opt
 curl -Lso - https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz | tar zxv
 cd cribl
