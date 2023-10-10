@@ -5,9 +5,8 @@ RUN \
    cd /opt \
    && curl -Lso - https://cdn.cribl.io/dl/4.3.0/cribl-4.3.0-f9e4a40c-linux-x64.tgz | tar zxv \
    && cd /opt/cribl/bin \
-   && ./cribl mode-managed-edge -H 192.168.60.115 -p 4200 \
-   && ./cribl boot-start \
-   && ./cribl start
+   && ./cribl mode-managed-edge -H 192.168.60.115 -p 4200 
+
 
 # Build arguments
 ARG BUILD_ARCH
