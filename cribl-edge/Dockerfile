@@ -2,7 +2,8 @@ ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 RUN \
-   /opt/cribl/bin/cribl mode-managed-edge -H cribl -p 4200
+   /opt/cribl/bin/cribl mode-managed-edge -H cribl -p 4200 \
+   /opt/cribl/bin/cribl restart
 
 # Build arguments
 ARG BUILD_ARCH
