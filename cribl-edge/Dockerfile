@@ -1,21 +1,11 @@
 ARG BUILD_FROM
-FROM ${BUILD_FROM}
+FROM $BUILD_FROM
 
-ENV CRIBL_DIST_MASTER_URL="tcp://criblmaster@cribl:4200"
+# Setup base
+RUN apk add --no-cache socat
 
-COPY rootfs/ /
+# Copy data
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-RUN cat /opt/start.sh
-RUN ls /opt/cribl/local
-RUN ls /opt/cribl/bin
-
-# Build arguments
-ARG BUILD_ARCH
-ARG BUILD_DATE
-ARG BUILD_DESCRIPTION
-ARG BUILD_NAME
-ARG BUILD_REF
-ARG BUILD_REPOSITORY
-ARG BUILD_VERSION
-
-ENV CRIBL_DIST_MASTER_URL="tcp://criblmaster@cribl:4200"
+CMD [ "/run.sh" ]
