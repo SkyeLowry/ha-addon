@@ -10,7 +10,7 @@ arch:
   - armhf
   - armv7
   - i386
-image: cribl/cribl
+#image: cribl/cribl
 ports:
   9420/tcp: 9420
   9000/tcp: 9000
